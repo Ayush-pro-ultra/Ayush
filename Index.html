@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Home page</title>
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,7 +9,8 @@
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
    <style>
-       *{
+   
+*{
     margin:0;
     padding:0;
 }
@@ -23,6 +24,7 @@ body {
     background:#162623;
     box-sizing:border-box ;
     overflow-x:hidden;
+    
     -webkit-transition:  all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 }
@@ -185,7 +187,45 @@ li a{
     color:white;
     display:none;
 }
-.bk{
+.ser{
+    position:absolute;
+    top:50px;
+    height:540px;
+    width:100vw;
+    font-size:40px;
+    color:white;
+    display:none;
+}
+.con{
+    position:absolute;
+    top:50px;
+    height:540px;
+    width:100vw;
+    font-size:40px;
+    color:white;
+    display:none;
+}
+.ab{
+    position:absolute;
+    top:50px;
+    height:540px;
+    width:100vw;
+    font-size:40px;
+    color:white;
+    display:none;
+}
+.sign{
+    position:absolute;
+    top:50px;
+    height:540px;
+    width:100vw;
+    font-size:40px;
+    color:white;
+    display:none;
+}
+
+
+#bk{
     position:fixed ;
     top:15px;
     left:5px;
@@ -206,21 +246,138 @@ li a{
     top:50px;
     overflow-y:scroll;
 }
+.cover2{
+    width:100vw;
+    height:200vh;
+   background-size:cover; 
+   background-repeat:no-repeat;
+   background:url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60");
+    position:absolute ;
+    top:50px;
+    overflow-y:scroll;
+}
+.cover3{
+    width:100vw;
+    height:200vh;
+   background-size:cover; 
+   background-repeat:no-repeat;
+   background:url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60");
+    position:absolute ;
+    top:50px;
+    overflow-y:scroll;
+}
+
+.cover4{
+    width:100vw;
+    height:200vh;
+   background-size:cover; 
+   background-repeat:no-repeat;
+   background:url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60");
+    position:absolute ;
+    top:50px;
+    overflow-y:scroll;
+}
+.bk4{
+    color:"#000";
+    background:#fff;
+}
+.cover5{
+    width:100vw;
+    height:590px;
+   background-size:cover; 
+   background-repeat:no-repeat;
+   background:#d1d9eb;
+    position:absolute ;
+    top:-50px;
+    overflow-y:hidden ;
+}
+.latin{
+    position:absolute;
+    bottom:550px;
+    font-size:30px;
+    text-align:center;
+    font-family:serif;
+}
+
+
+
 .ho{
     position:relative ;
     left:110px;
+    font-size:60px;
     font-weight:900;
     font-family:serif;
+    text-decoration:underline;
 }
+.ho2{
+    position:relative ;
+    left:50px;
+    font-size:60px;
+    font-weight:900;
+    font-family:serif;
+    text-decoration:underline;
+}
+.ho3{
+    position:relative ;
+    left:80px;
+    font-size:60px;
+    font-weight:900;
+    font-family:serif;
+    text-decoration:underline;
+}
+.ho4{
+    position:relative ;
+    left:80px;
+    font-size:60px;
+    font-weight:900;
+    font-family:serif;
+    text-decoration:underline;
+}
+.ho5{
+    position:relative ;
+    left:80px;
+    font-size:60px;
+    font-weight:900;
+    font-family:serif;
+    text-decoration:underline;
+}
+
+
 
    </style>
     <body>
      <div class="hm">
-     <button class="bk"><i class="fas fa-arrow-left"></i></button>
-     <div class="cover"> <span class="ho">Home</span>
-         <p>Hai my name is Ayush V Kulal</p>
+     <button class="bk" id="bk"><i class="fas fa-arrow-left"></i></button>
+     <div class="cover"> <span class="ho">Home</span><p class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo</p></div>
+    </div>
+       <div class="ser">
+     <button class="bk1" id="bk"><i class="fas fa-arrow-left"></i></button>
+     <div class="cover2"> <span class="ho2">services</span><p class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo</p></div>
+    </div>
+       <div class="con">
+     <button class="bk2" id="bk"><i class="fas fa-arrow-left"></i></button>
+     <div class="cover3"> <span class="ho3">Contact</span></div>
+    </div>
+       <div class="ab">
+     <button class="bk3" id="bk"><i class="fas fa-arrow-left"></i></button>
+     <div class="cover4"> <span class="ho4">About</span></div>
+    </div>
+       <div class="sign">
+     <button class="bk4" id="bk"><i class="fas fa-arrow-left"></i></button>
+     <div class="cover5"> <span class="ho5">Sign up</span>
+         <div>
+         <form action="mailto:ayushvkulal2006@gmail.com">
+             <input type="email" name="emailid" id="emaill" ><br>
+             <input type="password" name="pass" id="passs"><br>
+             <input type="submit" name="submit" id="submi">
+             </form>
+         </div>
      </div>
     </div>
+    
+    
+    
+    
     <div class="full">
         <nav class="navs">
          <div class="whole">
@@ -252,6 +409,46 @@ $("#lia").click(function(){
             $(".hm").show();
              $(".full").hide();
 });
+$(".bk1").click(function(){
+$(".ser").hide();
+$(".full").show();
+});
+$("#lib").click(function(){
+            $(".ser").show();
+             $(".full").hide();
+});
+$(".bk2").click(function(){
+$(".con").hide();
+$(".full").show();
+});
+$("#lic").click(function(){
+            $(".con").show();
+             $(".full").hide();
+});
+
+$(".bk3").click(function(){
+$(".ab").hide();
+$(".full").show();
+});
+$("#lid").click(function(){
+            $(".ab").show();
+             $(".full").hide();
+});
+
+$(".bk4").click(function(){
+$(".sign").hide();
+$(".full").show();
+});
+$("#lie").click(function(){
+            $(".sign").show();
+             $(".full").hide();
+});
+
+
+
+
+
+
 
 
     var counter0 = 0;
