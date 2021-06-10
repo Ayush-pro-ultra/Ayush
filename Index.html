@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home page</title>
-<link rel="icon" href="https://blob.sololearn.com/avatars/98826d47-c538-4acf-9dad-3da2239c8917.jpg">
+        <title>Tricky</title>
+        <link rel="icon" href="https://blob.sololearn.com/avatars/98826d47-c538-4acf-9dad-3da2239c8917.jpg">
            <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -216,12 +216,6 @@ li a{
     display:none;
 }
 .sign{
-    position:absolute;
-    top:50px;
-    height:540px;
-    width:100vw;
-    font-size:40px;
-    color:white;
     display:none;
 }
 
@@ -282,16 +276,7 @@ li a{
     color:"#000";
     background:#fff;
 }
-.cover5{
-    width:100vw;
-    height:590px;
-   background-size:cover; 
-   background-repeat:no-repeat;
-   background:#d1d9eb;
-    position:absolute ;
-    top:-50px;
-    overflow-y:hidden ;
-}
+
 .latin{
     position:absolute;
     bottom:550px;
@@ -335,31 +320,197 @@ li a{
     text-decoration:underline;
 }
 .ho5{
+    top:60px;
     position:relative ;
     left:80px;
     font-size:60px;
     font-weight:900;
     font-family:serif;
     text-decoration:underline;
+    color:#000;
+    }
+
+.form{
+    height:400px;
+    width:300px;
+    backdrop-filter:blur(30px);
+    background:#d1d9eb;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    z-index:;
+    color:#000;
+    border-radius:40px;
+    box-shadow: 8px 5px 15px -2px rgba(0,0,0,0.15) ,
+   -8px -8px 10px -2px rgba(255,255,255,0.7) ;
+    position:absolute ;
+    top:150px;
+    left:25px;
 }
+.cover5{
+    position:absolute;
+    top:0px;
+    height:700px;
+    width:100vw;
+    font-size:40px;
+    color:white;
+   background:#d1d9eb;
+}
+
+
+.inputBox{
+    width:140px;
+    position:absolute;
+    top:90px;
+    left:26%;
+    background-color:#d1d9eb;
+    border-style:none;
+    outline:none;
+    transition:1s;
+    box-shadow:inset 3px 3px 4px -2px rgba(0,0,0,0.4) ,inset
+   -3px -3px 6px -2px rgba(255,255,255,0.7) ;
+    /*border:0.3px solid #000;*/
+}
+.surn{
+    width:140px;
+    position:absolute;
+    top:150px;
+    left:26%;
+    background-color:#d1d9eb;
+    border-style:none;
+    outline:none;
+    transition:1s;
+    box-shadow:inset 3px 3px 4px -2px rgba(0,0,0,0.4) ,inset
+   -3px -3px 6px -2px rgba(255,255,255,0.7) ;
+  /*  border:0.3px solid #000;*/
+}
+#emaill{
+    width:140px;
+    position:absolute;
+    top:210px;
+    left:26%;
+    background-color:#d1d9eb;
+    border-style:none;
+    outline:none;
+    transition:1s;
+    font-weight:900;
+    box-shadow:inset 3px 3px 4px -2px rgba(0,0,0,0.4) ,inset
+   -3px -3px 6px -2px rgba(255,255,255,0.7) ;
+    /*border:0.3px solid #000;*/
+}
+#passs{
+    width:140px;
+    position:absolute;
+    top:270px;
+    left:26%;
+    background-color:#d1d9eb;
+    border-style:none;
+    outline:none;
+    transition:1s;
+    box-shadow:inset 3px 3px 4px -2px rgba(0,0,0,0.4) ,inset
+   -3px -3px 6px -2px rgba(255,255,255,0.7) ;
+    font-weight:900;
+   /* border:0.3px solid #000;*/
+}
+label{
+    font-family:serif;
+}
+
+.firstname{
+    left:10px;
+}
+.ss{
+    font-size:10px;
+    z-index:2;
+    position:relative;
+    top:-35px;
+    left:-40px;
+    transition:1s;
+    
+    
+}
+.uu{
+    font-size:10px;
+    z-index:2;
+    position:relative;
+    top:17px;
+    left:-40px;
+    transition:1s;
+    
+}
+
+
+
+
+
+/*
+.uu{
+    position:relative ;
+    right:80px;*/
+}
+.surn{
+    position:absolute ;
+}
+/*.ss{
+    position:relative;
+    top:-45px;
+    right:80px;*/
+}
+.inputBox input:focus ~ label{
+    top:-20px;
+}
+.inputBox:hover{
+    border-radius:40px;
+    width:160px;
+    height:20px;
+    left:23%;
+}
+.surn:hover{
+    border-radius:40px;
+    width:160px;
+    height:20px;
+    left:23%;
+}
+input{
+    border-radius:3px;
+}
+#emaill:hover{
+    border-radius:40px;
+    width:160px;
+    height:20px;
+    left:23%;
+}
+#passs:hover{
+    border-radius:40px;
+    width:160px;
+    height:20px;
+    left:23%;
+}
+input{
+    font-weight:900;
+}
+#submi{
+    width:60px;
+    position:absolute;
+    top:330px;
+    left:40%;
+    background-color:#d1d9eb;
+    border-style:none;
+    outline:none;
+    transition:1s;
+    box-shadow: 3px 3px 4px -2px rgba(0,0,0,0.4) ,
+   -3px -3px 6px -2px rgba(255,255,255,0.7) ;
+    font-weight:900;
+}
+
+
+
 
 
 
    </style>
     <body>
-     <script src="https://rawcdn.githack.com/AssassinAguilar/Alertism/de50fbff074e95ccc96ad288006191b8c2ec1b7a/Alertism.min.js"> </script>
-      <script>
-       Alertism({
-            title: "Tricky Web",
-            text: "Website is in underConstruction", 
-            btnText: "OK",
-            mode: "glass",
-            icon: "info"
-        },"zoom");        
-        
-        
-   </script>
-      <div class="hm">
+     <div class="hm">
      <button class="bk" id="bk"><i class="fas fa-arrow-left"></i></button>
      <div class="cover"> <span class="ho">Home</span><p class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo</p></div>
     </div>
@@ -378,10 +529,15 @@ li a{
        <div class="sign">
      <button class="bk4" id="bk"><i class="fas fa-arrow-left"></i></button>
      <div class="cover5"> <span class="ho5">Sign up</span>
-         <div>
-         <form action="">
-             <input type="email" name="emailid" id="emaill" ><br>
-             <input type="password" name="pass" id="passs"><br>
+         <div class="form">
+         <form action=""
+         method="post">
+         <label class="uu" id="uu">FirstName</label><br>
+         <input type="text" class="inputBox" onclick="val()"><br>
+         <label class="ss" id="ss">SurName</label><br>
+    <input type="text" class="surn" onclick="bal()"><br>
+             <input type="email" name="emailid" id="emaill" placeholder="Email Id"><br>
+             <input type="password" name="pass" id="passs" placeholder="Password"><br>
              <input type="submit" name="submit" id="submi">
              </form>
          </div>
@@ -490,6 +646,28 @@ $("#lie").click(function(){
 }
 });
 }
+
+
+
+function val(){
+var nn = document.getElementById("uu");
+    nn.style.top = "12px";
+    nn.style.left = "-48px";
+    nn.style.color ="#03a9f4";
+    nn.style.fontSize="15px";
+    nn.style.fontWeight="900";
+}
+
+function bal(){
+var mm = document.getElementById("ss");
+    mm.style.top = "-40px";
+    mm.style.left = "-48px";
+    mm.style.color ="#03a9f4";
+    mm.style.fontSize="15px";
+    mm.style.fontWeight="900";
+}
+
+
 
     </script>
 </html>
