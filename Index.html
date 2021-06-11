@@ -603,7 +603,7 @@ ho5{
 
 
    </style>
-    <body onload="aler()">
+    <body>
      <div class="hm">
      <button class="bk" id="bk"><i class="fas fa-arrow-left"></i></button>
      <div class="cover"> <span class="ho">Home</span><p class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo</p></div>
@@ -756,24 +756,6 @@ $("#lie").click(function(){
 
 
 
-
-
-
-
-
-
-
-    </script>
-    
-    
-    <script>
-        function aler(){
-var load = document.getElementById("loading");
-    load.style.display = "none";
-}
-
-
-
 function val(){
 var nn = document.getElementById("uu");
     nn.style.top = "10px";
@@ -791,9 +773,20 @@ var mm = document.getElementById("ss");
     mm.style.fontSize="15px";
     mm.style.fontWeight="900";
 }
-function aler(){
-    alert("onload");
-}
+
+window.addEventListener("load", function(){
+var preload = document.getElementById("loading");
+    preload.style.display = "none";
+})
+
+
+
+
+
+
+
+
+
 
 
 
