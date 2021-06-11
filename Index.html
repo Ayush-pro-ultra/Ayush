@@ -330,7 +330,6 @@ li a{
     color:#000;
     }
 
-
 .form{
     height:400px;
     width:300px;
@@ -551,46 +550,20 @@ input{
     color:#fff;
 }
 .load{
-    height:600px;
-    width:100vw;
-    justify-content:center ;
-    align-items:center;
-    background-color:#000;
-    overflow:hidden;
-    z-index:-11;
+    height:110vh;
+    width:100%;
     position:absolute;
     top:-50px;
-    opacity:0;
-    transform:scale(1);
-    animation:mm 15s linear;
-}
-@keyframes mm{
-    0%{
-        opacity:1;
-        transform:scale(1);
-        z-index:11;
-        
-    }
-    50%{
-        opacity:0;
-    }
-    100%{
-        transform:scale(1);
-        z-index:-61;
-        opacity:0;
-    }
+    background:#000 url("https://i.pinimg.com/originals/a6/24/42/a624428f7f43dc10ce3fcf523089f325.gif") no-repeat center;   
+       
+       
+       
+       
+       
 }
 
 
 
-.load img{
-    height:300px;
-    width:300px;
-    position:relative;
-    top:30%;
-    left:10%;
-    
-}
 @media(max-width:498px;){
 .btn{
     transform:scale(2);
@@ -624,8 +597,13 @@ ho5{
 
 
 
+
+
+
+
+
    </style>
-    <body>
+    <body onload="aler()">
      <div class="hm">
      <button class="bk" id="bk"><i class="fas fa-arrow-left"></i></button>
      <div class="cover"> <span class="ho">Home</span><p class="latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo</p></div>
@@ -690,8 +668,8 @@ ho5{
           </div>  
         </nav>
        </div>
-       <div class="load">
-           <img src="https://i.pinimg.com/originals/a6/24/42/a624428f7f43dc10ce3fcf523089f325.gif">
+       <div class="load" id="loading">
+       
        </div>
     </body>
     <script>
@@ -776,6 +754,26 @@ $("#lie").click(function(){
 
 
 
+
+
+
+
+
+
+
+
+
+    </script>
+    
+    
+    <script>
+        function aler(){
+var load = document.getElementById("loading");
+    load.style.display = "none";
+}
+
+
+
 function val(){
 var nn = document.getElementById("uu");
     nn.style.top = "10px";
@@ -793,11 +791,9 @@ var mm = document.getElementById("ss");
     mm.style.fontSize="15px";
     mm.style.fontWeight="900";
 }
-
-
-
-
-
+function aler(){
+    alert("onload");
+}
 
 
 
