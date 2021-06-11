@@ -83,6 +83,9 @@ transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
     -webkit-transition:  all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 }
+
+
+
 .line-1,
 .line-2,
 .line-3{
@@ -329,7 +332,6 @@ li a{
     text-decoration:underline;
     color:#000;
     }
-
 .form{
     height:400px;
     width:300px;
@@ -361,7 +363,7 @@ li a{
 .inputBox{
     width:140px;
     position:absolute;
-    top:90px;
+    top:22%;
     left:26%;
     background-color:#d1d9eb;
     border-style:none;
@@ -374,7 +376,7 @@ li a{
 .surn{
     width:140px;
     position:absolute;
-    top:150px;
+    top:37%;
     left:26%;
     background-color:#d1d9eb;
     border-style:none;
@@ -387,7 +389,7 @@ li a{
 #emaill{
     width:140px;
     position:absolute;
-    top:210px;
+    top:55%;
     left:26%;
     background-color:#d1d9eb;
     border-style:none;
@@ -401,7 +403,7 @@ li a{
 #passs{
     width:140px;
     position:absolute;
-    top:270px;
+    top:70%;
     left:26%;
     background-color:#d1d9eb;
     border-style:none;
@@ -433,7 +435,7 @@ label{
     font-size:10px;
     z-index:2;
     position:relative;
-    top:-5px;
+    top:17px;
     left:-40px;
     transition:1s;
     
@@ -486,14 +488,20 @@ input{
     height:20px;
     left:23%;
 }
+#submi:hover{
+    border-radius:40px;
+    width:180px;
+    height:20px;
+    left:20%;
+}
 input{
     font-weight:900;
 }
 #submi{
-    width:60px;
+    width:30%;
     position:absolute;
-    top:330px;
-    left:40%;
+    top:80%;
+    left:35%;
     background-color:#d1d9eb;
     border-style:none;
     outline:none;
@@ -502,6 +510,114 @@ input{
    -3px -3px 6px -2px rgba(255,255,255,0.7) ;
     font-weight:900;
 }
+#nm{
+    outline:none;
+    position:relative;
+    font-size:20px;
+    
+}
+.bad{
+    width:170px;
+    background:;
+    position:absolute;
+    top:40px;
+    left:10px;
+    border-radius:40px;
+    transition:1s;
+    outline:none;
+    overflow:hidden;
+    height:30px;
+}
+.bad:hover{
+    background-color:#fff;
+}
+.box{
+    position:absolute ;
+    left:40%;
+    top:-85px;
+    height:100px;
+    width:190px;
+    background-color:orange;
+    overflow:hidden;
+    transition:3s;
+    border-radius: 18% 82% 59% 41% / 74% 42% 58% 26%;
+}
+.hello{
+    position:relative;
+    left:30%;
+    top:5px;
+    font-size:25px;
+    font-weight:bold;
+    font-family:serif;
+    color:#fff;
+}
+.load{
+    height:600px;
+    width:100vw;
+    justify-content:center ;
+    align-items:center;
+    background-color:#000;
+    overflow:hidden;
+    z-index:-11;
+    position:absolute;
+    top:-50px;
+    opacity:0;
+    transform:scale(1);
+    animation:mm 15s linear;
+}
+@keyframes mm{
+    0%{
+        opacity:1;
+        transform:scale(1);
+        z-index:11;
+        
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        z-index:-61;
+        opacity:0;
+    }
+}
+
+
+
+.load img{
+    height:500px;
+    width:500px;
+    position:relative;
+    top:50px;
+    left:-80px;
+    
+}
+@media(max-width:998px;){
+.btn{
+    transform:scale(2);
+} 
+.latin{
+    bottom:160vh;
+}   
+.ho{
+    left:50%;
+}
+.ho2{
+    left:50%;
+}
+ho3{
+    left:50%;
+}
+ho4{
+    left:50%;
+}
+ho5{
+    left:50%;
+}
+
+
+}
+
 
 
 
@@ -533,7 +649,7 @@ input{
          <form action=""
          method="post">
          <label class="uu" id="uu">FirstName</label><br>
-         <input type="text" class="inputBox" onclick="val()"><br>
+         <input type="text" class="inputBox" onclick="val()" value="" id="fn"><br>
          <label class="ss" id="ss">SurName</label><br>
     <input type="text" class="surn" onclick="bal()"><br>
              <input type="email" name="emailid" id="emaill" placeholder="Email Id"><br>
@@ -550,7 +666,14 @@ input{
     <div class="full">
         <nav class="navs">
          <div class="whole">
+         
+           
             <ul class="mlist">
+            <div><img src="">
+            </div>
+            <div class="box">
+            <h5 class="hello">Hello</h5>
+            <div class="bad"><h3 id="nm" contenteditable="True">Write your name</h3></div></div>
                 <mab><li id="lia" class="lii"><a href="#" class="l1">Home</a></li></mab>
               <mab>  <li id="lib" class="lii"><a href="#" class="l2">Services</a></li></mab>
                  <mab> <li id="lic" class="lii"><a href="#" class="l3">Contact</a></li></mab>
@@ -567,50 +690,53 @@ input{
           </div>  
         </nav>
        </div>
+       <div class="load">
+           <img src="https://i.pinimg.com/originals/a6/24/42/a624428f7f43dc10ce3fcf523089f325.gif">
+       </div>
     </body>
     <script>
         window.onload = function(){
 $(".bk").click(function(){
-$(".hm").hide();
-$(".full").show();
+$(".hm").hide(1000);
+$(".full").show(1000);
 });
 $("#lia").click(function(){
-            $(".hm").show();
-             $(".full").hide();
+            $(".hm").show(1000);
+             $(".full").hide(1000);
 });
 $(".bk1").click(function(){
-$(".ser").hide();
-$(".full").show();
+$(".ser").hide(1000);
+$(".full").show(1000);
 });
 $("#lib").click(function(){
-            $(".ser").show();
-             $(".full").hide();
+            $(".ser").show(1000);
+             $(".full").hide(1000);
 });
 $(".bk2").click(function(){
-$(".con").hide();
-$(".full").show();
+$(".con").hide(1000);
+$(".full").show(1000);
 });
 $("#lic").click(function(){
-            $(".con").show();
-             $(".full").hide();
+            $(".con").show(1000);
+             $(".full").hide(1000);
 });
 
 $(".bk3").click(function(){
-$(".ab").hide();
-$(".full").show();
+$(".ab").hide(1000);
+$(".full").show(1000);
 });
 $("#lid").click(function(){
-            $(".ab").show();
-             $(".full").hide();
+            $(".ab").show(1000);
+             $(".full").hide(1000);
 });
 
 $(".bk4").click(function(){
-$(".sign").hide();
-$(".full").show();
+$(".sign").hide(1000);
+$(".full").show(1000);
 });
 $("#lie").click(function(){
-            $(".sign").show();
-             $(".full").hide();
+            $(".sign").show(1000);
+             $(".full").hide(1000);
 });
 
 
@@ -623,9 +749,9 @@ $("#lie").click(function(){
     var counter0 = 0;
         $("#butn").click(function(){
         if (counter0 == 0){
-            $(".navs").css("height","400px");
-             $(".btn").css("top","350px");
-             $(".mlist").css("top","5px");
+            $(".navs").css("height","500px");
+             $(".btn").css("top","450px");
+             $(".mlist").css("top","95px");
              $("#lie").css("right","-25px");
              $("#lid").css("left","-25px");
              $("#lib").css("left","-65px");
@@ -649,9 +775,10 @@ $("#lie").click(function(){
 
 
 
+
 function val(){
 var nn = document.getElementById("uu");
-    nn.style.top = "-8px";
+    nn.style.top = "10px";
     nn.style.left = "-48px";
     nn.style.color ="#03a9f4";
     nn.style.fontSize="15px";
@@ -660,12 +787,17 @@ var nn = document.getElementById("uu");
 
 function bal(){
 var mm = document.getElementById("ss");
-    mm.style.top = "-40px";
+    mm.style.top = "-42px";
     mm.style.left = "-48px";
     mm.style.color ="#03a9f4";
     mm.style.fontSize="15px";
     mm.style.fontWeight="900";
 }
+
+
+
+
+
 
 
 
