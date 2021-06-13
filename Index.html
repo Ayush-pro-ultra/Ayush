@@ -18,64 +18,32 @@
 
 
 body {
-    background-color:#162623;
     height:100vh;
     width:100vw;
     background-position:fixed;
-    background:#162623;
+    background:#43C4DB;
     box-sizing:border-box ;
     overflow-x:hidden;
     
     -webkit-transition:  all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 }
-body::before{
-    content:"";
-    height:100%;
-    width:100%;
-    position:fixed;
-    top:0px;
-    left:0px;
-    right:0;
-    z-index:-1;
-background:linear-gradient(to left, #f0f,#ff0);
-    clip-path:circle(30% at right 70%);
-    -webkit-transition:  all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-}
-body::after{
-    content:"";
-    height:100%;
-    width:100%;
-    position:fixed;
-    top:0px;
-    right:0;
-    left:0px;
-    z-index:-1;
-background:linear-gradient(to top, #e91e63,#2196f3);
-    clip-path:circle(30% at 10% 10%);
-    -webkit-transition:  all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-}
 
 
 .navs{
-    height:10vh;
+    height:3vh;
     width:100vw;
     background-color:lightblue;
     box-shadow:0px 6px 10px rgba(0,0,0,0.4);
-    border-radius:0 0 50px 50px;
     -webkit-transition:  all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 }
 .btn{
-    background-color:transparent;
-    height:40px;
-    width:40px;
-    border-radius:50%;
+    background-color:white;
+    height:5px;
+    width:100vw;
     position:absolute;
-    right:43vw;
-    top:3px;
+    top:7px;
     transform:translate(50% 50%);
     display:block;
     justify-content:center;
@@ -215,9 +183,7 @@ li a{
     color:white;
     display:none;
 }
-.sign{
-    display:none;
-}
+
 
 
 #bk{
@@ -234,9 +200,6 @@ li a{
 .cover{
     width:100vw;
     height:200vh;
-   background-size:cover; 
-   background-repeat:no-repeat;
-   background:url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60");
     position:absolute ;
     top:50px;
     overflow-y:scroll;
@@ -320,14 +283,14 @@ li a{
     text-decoration:underline;
 }
 .ho5{
-    top:60px;
-    position:relative ;
-    left:80px;
-    font-size:60px;
+    top:90px;
+    position:absolute ;
+    left:130px;
+    font-size:25px;
     font-weight:900;
     font-family:serif;
-    text-decoration:underline;
     color:#000;
+    z-index:1;
     }
 
 .form{
@@ -341,20 +304,22 @@ li a{
     z-index:;
     color:#000;
     border-radius:40px;
-    box-shadow: 8px 5px 15px -2px rgba(0,0,0,0.15) ,
-   -8px -8px 10px -2px rgba(255,255,255,0.7) ;
+    box-shadow: 2px 2px 4px -2px rgba(0,0,0,0.15) ,
+   -2px -2px 4px -2px rgba(255,255,255,0.7) ;
     position:absolute ;
-    top:150px;
+    top:60px;
     left:25px;
 }
 .cover5{
     position:absolute;
-    top:0px;
-    height:700px;
-    width:100vw;
-    font-size:40px;
+    top:20px;
+    height:110px;
+    width:140px;
+    left:110px;
+    font-size:20px;
     color:white;
-   background:#d1d9eb;
+   background:;
+border-radius: 48% 52% 68% 32% / 59% 72% 28% 41%;
 }
 
 
@@ -419,25 +384,7 @@ label{
 .firstname{
     left:10px;
 }
-.ss{
-    font-size:10px;
-    z-index:2;
-    position:relative;
-    top:-35px;
-    left:-40px;
-    transition:1s;
-    
-    
-}
-.uu{
-    font-size:10px;
-    z-index:2;
-    position:relative;
-    top:17px;
-    left:-40px;
-    transition:1s;
-    
-}
+
 
 
 
@@ -562,6 +509,33 @@ input{
        
 }
 
+.sign{
+    display:none;
+    height:100vh;
+    background:#d1d9eb;
+}
+
+.ss{
+    font-size:10px;
+    z-index:5;
+    position:fixed ;
+    top:35.5%;
+    left:28%;
+    transition:1s;
+    
+    
+}
+.uu{
+    font-size:10px;
+    z-index:11;
+    position:fixed  ;
+    top:20.5%;
+    left:27.5%;
+    transition:1s;
+    
+}
+
+
 
 
 @media(max-width:498px;){
@@ -592,7 +566,22 @@ ho5{
 }
 
 }
-
+.fa{
+    position:relative;
+    left:35px;
+    top:0px;
+    font-size:35px;
+    color:blue;
+    background-color:#d1d9eb;
+    width:70px;
+    height:70px;
+    justify-content:center ;
+    align-items:center;
+    display:flex;
+    border-radius:50%;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.15) ,
+   -3px -3px 6px rgba(255,255,255,0.7) ;
+}
 
 
 
@@ -622,24 +611,25 @@ ho5{
     </div>
        <div class="sign">
      <button class="bk4" id="bk"><i class="fas fa-arrow-left"></i></button>
-     <div class="cover5"> <span class="ho5">Sign up</span>
+   <span class="ho5">Sign up</span>
          <div class="form">
          <form action=""
          method="post">
-         <label class="uu" id="uu">FirstName</label><br>
-         <input type="text" class="inputBox" onclick="val()" value="" id="fn"><br>
-         <label class="ss" id="ss">SurName</label><br>
-    <input type="text" class="surn" onclick="bal()"><br>
-             <input type="email" name="emailid" id="emaill" placeholder="Email Id"><br>
-             <input type="password" name="pass" id="passs" placeholder="Password"><br>
+         
+         <input type="text" class="inputBox" onclick="val()" value="" id="fn" required><label class="uu" id="uu">FirstName</label></input><br>
+        
+    <input type="text" class="surn" onclick="bal()" required> <label class="ss" id="ss">SurName</label></input><br>
+             <input type="email" name="emailid" id="emaill" placeholder="Email Id" required><br>
+             <input type="password" name="pass" id="passs" placeholder="Password" required><br>
              <input type="submit" name="submit" id="submi">
              </form>
-         </div>
+         
      </div>
+       <div class="cover5"><i class="fa fa-user"></i></div>   
     </div>
     
     
-    
+  
     
     <div class="full">
         <nav class="navs">
@@ -662,9 +652,6 @@ ho5{
             </ul>
         </div>
           <div class="btn" id="butn">
-              <div class="line-1"></div>
-              <div class="line-2"></div>
-              <div class="line-3"></div>
           </div>  
         </nav>
        </div>
@@ -727,25 +714,18 @@ $("#lie").click(function(){
     var counter0 = 0;
         $("#butn").click(function(){
         if (counter0 == 0){
-            $(".navs").css("height","500px");
-             $(".btn").css("top","450px");
-             $(".mlist").css("top","95px");
-             $("#lie").css("right","-25px");
-             $("#lid").css("left","-25px");
-             $("#lib").css("left","-65px");
-             $("#lic").css("right","14px");
-             $("#lia").css("left","-25px");
+            $(".navs").css("height","90vh");
+             $(".btn").css("top","88vh");
+             $(".btn").css("backgroundColor","blue");
+             $(".mlist").css("top","16vh");
             counter0 = 1;
         }
         else {
-            $(".navs").css("height","10vh");
+            $(".navs").css("height","3vh");
              $(".btn").css("top","3px");
-             $(".mlist").css("top","-400px");
-             $("#lie").css("right","-300px");
-             $("#lid").css("left","-790px");
-             $("#lib").css("left","-790px");
-             $("#lic").css("right","-300px");
-             $("#lia").css("left","-790px");
+             $(".btn").css("backgroundColor","white");
+             $(".mlist").css("top","-90vh");
+             
             counter0 = 0;
 }
 });
@@ -754,12 +734,11 @@ $("#lie").click(function(){
 
 
 
-
-
 function val(){
 var nn = document.getElementById("uu");
-    nn.style.top = "10px";
-    nn.style.left = "-48px";
+var mm = document.getElementById("ss");
+    nn.style.top = "17.5%";
+    nn.style.left = "25%";
     nn.style.color ="#03a9f4";
     nn.style.fontSize="15px";
     nn.style.fontWeight="900";
@@ -767,8 +746,8 @@ var nn = document.getElementById("uu");
 
 function bal(){
 var mm = document.getElementById("ss");
-    mm.style.top = "-42px";
-    mm.style.left = "-48px";
+    mm.style.top = "33%";
+    mm.style.left = "25%";
     mm.style.color ="#03a9f4";
     mm.style.fontSize="15px";
     mm.style.fontWeight="900";
@@ -778,6 +757,8 @@ window.addEventListener("load", function(){
 var preload = document.getElementById("loading");
     preload.style.display = "none";
 })
+
+
 
 
 
