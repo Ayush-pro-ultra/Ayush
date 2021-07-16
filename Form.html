@@ -90,6 +90,10 @@
     height:10vw;
     width: 10vw;
   }
+.bat{
+left:74%;
+}
+
 }
   </style>
 
@@ -110,7 +114,8 @@
   <script>
       window.onload = function(){
   $(".icon").click(function(){
-    $(".icon").css('left', '64%');
+    $(".icon").addClass("bat");
+    $(".icon").css("left","60%");
     $(".cover").css('height','15%');
       $(".icon").css('top', '30%');
     $(".cover").css('border-radius','0px');
