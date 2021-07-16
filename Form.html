@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+ <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  
+  <!-- HTML -->
+  <style>
+      body {
+    font-size: 15pt;
+    background-image:linear-gradient(120deg, #5346F2 20%, #EC1AC0 60%);
+    height: 100vh;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+.card{
+  height: 80vh;
+  width:80vw;
+  background-color: #1476F270;
+  margin: auto;
+  left:0;
+  right: 0;
+  position: absolute;
+  top:50%;
+  bottom: 50%;
+  /*justify-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flex; */
+  border-radius:2vh;
+  overflow: hidden;
+}
+.cover{
+  height: 70%;
+  width: 100%;
+  background-color:#394AFFC2;
+  top: 0%;
+  position: relative;
+  transition: 1s;
+  border-radius: 0px 0px 70px 70px;
+  box-shadow: 0px 4px 10px #65656C9E;
+}
+.icon{
+  margin: auto;
+  position:absolute;
+  left: 0;
+  right: 0;
+  height:20vw;
+  width: 20vw;
+  border-radius: 50%;
+  background-color:#FFFFFF;
+  background-image: url("https://image.flaticon.com/icons/png/512/3135/3135715.png");
+  background-size: 100% 100%;
+  z-index: 100;
+  text-align: center;
+  top:70%;
+  box-shadow: 0px 0px 13px #181D1EC9;
+  transition: 1s;
+}
+
+
+.fa{
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  bottom: 80%;
+  text-align: center;
+  font-size:9rem;
+}
+@media(max-width:500px){
+  .icon{
+    height: 90px;
+    width: 90px;
+  }
+  .cover{
+    border-radius:  0px 0px 10px 10px;
+  }
+    
+  }
+@media(max-width:998){
+  .icon{
+    height: 10vw;
+    width: 10vw;
+  }
+}
+  </style>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<div class="card">
+  <div class="cover">
+  <div class="icon">
+ 
+  </div>
+  </div>
+</div>
+  <script src="main.js"></script>
+  <script>
+      window.onload = function(){
+  $(".icon").click(function(){
+    $(".icon").css('left', '60%');
+    $(".cover").css('height','15%');
+      $(".icon").css('top', '30%');
+    $(".cover").css('border-radius','0px');
+    console.log("clicked");
+  })
+}
+  </script>
+</body>
+</html>
